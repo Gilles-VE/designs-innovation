@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="450"
+   height="216"
+   viewBox="62 26 830 400"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="tub-chewing.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.8449074"
+     inkscape:cx="397.02522"
+     inkscape:cy="148.86249"
+     inkscape:window-width="3412"
+     inkscape:window-height="1366"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="body" />
+  <title
+     id="title1">Omnivore tub goober, happy chewing (hand-drawn)</title>
+  <g
+     id="body"
+     stroke="#18182A"
+     stroke-width="14"
+     stroke-linejoin="round"
+     stroke-linecap="round">
+    <path
+       fill="#FF5A36"
+       d="M156 410 C114 410 90 380 94 346 C98 310 124 280 156 266 C154 256 156 250 158 244 C192 118 312 38 450 38 C588 38 708 118 742 244 C744 250 746 256 748 264 C776 280 802 310 806 346 C810 380 786 410 744 410 Z"
+       id="path1"
+       style="stroke-linecap:round;stroke-linejoin:round" />
+  </g>
+  <g
+     id="face"
+     stroke-linecap="round">
+    <path
+       fill="none"
+       stroke="#18182A"
+       stroke-width="15"
+       d="M316 126 Q344 88 372 126 M528 126 Q556 88 584 126"
+       id="path3" />
+    <path
+       id="mouth"
+       fill="#18182A"
+       d="M300 210 C300 158 330 136 380 136 H520 C570 136 600 158 600 210 V250 C600 280 580 296 560 296 H340 C320 296 300 280 300 250 Z" />
+    <g
+       id="teeth"
+       fill="#FFF6E6">
+      <rect
+         x="388"
+         y="146"
+         width="44"
+         height="42"
+         rx="5"
+         id="rect3" />
+      <rect
+         x="468"
+         y="146"
+         width="44"
+         height="42"
+         rx="5"
+         id="rect4" />
+    </g>
+  </g>
+  <g
+     id="tub"
+     stroke="#18182A"
+     stroke-width="14"
+     stroke-linejoin="round">
+    <path
+       fill="#FFF6E6"
+       d="M324 300 H576 V378 Q576 414 540 414 H360 Q324 414 324 378 Z"
+       id="path4" />
+    <path
+       fill="#B884CC"
+       d="M296 262 Q296 248 450 248 Q604 248 604 262 V300 Q604 316 586 316 H314 Q296 316 296 300 Z"
+       id="path5" />
+    <ellipse
+       cx="450"
+       cy="264"
+       rx="146"
+       ry="14"
+       fill="#D3B1E2"
+       stroke-width="9"
+       id="ellipse5" />
+  </g>
+  <g
+     id="hands"
+     stroke="#18182A"
+     stroke-width="14"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+    <path
+       fill="#ff5a36"
+       stroke="none"
+       d="m 232,302 c 50,-6 90,4 106,28 14,24 7.62733,48.98071 -6.37267,72.98071 l -128.29029,-0.11507 z"
+       id="path6"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       fill="#ff5a36"
+       stroke="none"
+       d="m 668,302 c -50,-6 -90,4 -106,28 -14,24 -6.14158,49.00244 7.85842,73.00244 l 129.00244,-0.32547 z"
+       id="path7"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       fill="none"
+       d="M236 302 C284 298 322 308 338 332 C350 356 348 386 336 408 M664 302 C616 298 578 308 562 332 C550 356 552 386 564 408"
+       id="path8" />
+  </g>
+  <g
+     id="motion"
+     fill="none"
+     stroke="#18182A"
+     stroke-width="15"
+     stroke-linecap="round">
+    <path
+       d="M792 110 L816 82 M808 142 L862 118 M824 172 L872 170"
+       id="path10" />
+  </g>
+</svg>

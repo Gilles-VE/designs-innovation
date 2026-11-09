@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Innovation Concepts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@800;900&family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Schibsted+Grotesk:wght@500;700;800&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="hub/nav.css">
+<script src="hub/pages.js"></script>
+<style>
+  :root {
+    --bg: #F3F1EC; --surface: #FFFFFF; --ink: #17171A; --muted: #6A6A72; --line: rgba(0,0,0,.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121214; --surface: #1C1C20; --ink: #F2F1EE; --muted: #9C9CA6; --line: rgba(255,255,255,.08); }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 400 16px/1.5 Inter, system-ui, sans-serif;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 16px; }
+  @media (min-width: 720px) { .wrap { padding: 0 32px; } }
+
+  header { padding: 56px 0 28px; }
+  .eyebrow { font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; }
+  h1 { font: 800 clamp(36px, 6vw, 68px)/1.02 'Schibsted Grotesk', sans-serif; letter-spacing: -.03em; margin: 0; max-width: 16ch; }
+  .lede { color: var(--muted); max-width: 52ch; margin: 16px 0 0; font-size: 17px; }
+
+  /* Flow strip: the order the pages link in */
+  .flow { display: flex; align-items: center; gap: 10px; margin: 28px 0 0; flex-wrap: wrap; font-size: 14px; color: var(--muted); }
+  .flow a { color: var(--ink); text-decoration: none; font-weight: 600; padding: 6px 12px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); }
+  .flow a:hover { border-color: currentColor; }
+  .flow .sep { opacity: .5; }
+
+  .grid { display: grid; gap: 20px; grid-template-columns: 1fr; padding: 24px 0 120px; }
+  @media (min-width: 820px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+
+  .card {
+    --c-bg: #fff; --c-ink: #000; --c-accent: #000;
+    position: relative; display: flex; flex-direction: column;
+    background: var(--c-bg); color: var(--c-ink); text-decoration: none;
+    border-radius: 22px; overflow: hidden;
+    box-shadow: 0 1px 0 var(--line), 0 12px 30px -18px rgba(0,0,0,.35);
+    transform: translateY(16px); opacity: 0;
+    animation: rise .7s cubic-bezier(.2,.7,.1,1) forwards;
+    animation-delay: calc(var(--i) * 90ms + 80ms);
+    transition: transform .35s cubic-bezier(.2,.7,.1,1), box-shadow .35s ease;
+  }
+  @keyframes rise { to { transform: none; opacity: 1; } }
+  .card:hover, .card:focus-visible { transform: translateY(-6px); box-shadow: 0 1px 0 var(--line), 0 26px 50px -22px rgba(0,0,0,.45); outline: none; }
+  .card:focus-visible { box-shadow: 0 0 0 3px var(--c-accent); }
+
+  /* Live preview of the actual page */
+  .preview { position: relative; aspect-ratio: 4 / 3; overflow: hidden; border-bottom: 1px solid rgba(0,0,0,.08); background: var(--c-bg); }
+  .preview iframe {
+    position: absolute; top: 0; left: 0; border: 0;
+    width: 1280px; height: 960px; transform-origin: 0 0;
+    pointer-events: none; transition: transform 1.2s cubic-bezier(.2,.7,.1,1);
+  }
+  .preview::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,.06)); }
+
+  .body { padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .meta { display: flex; align-items: center; justify-content: space-between; font: 600 12px/1 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; opacity: .7; }
+  .tag { padding: 6px 10px; border-radius: 999px; background: color-mix(in srgb, var(--c-accent) 16%, transparent); color: var(--c-ink); opacity: 1; }
+  .name { font-family: var(--c-font); font-weight: 800; font-size: 36px; line-height: 1; letter-spacing: -.02em; margin: 6px 0 0; }
+  .line { margin: 0; font-size: 15.5px; opacity: .82; }
+  .go { margin-top: auto; padding-top: 10px; display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 15px; color: var(--c-ink); }
+  .go i { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--c-accent); color: #fff; font-style: normal; transition: transform .3s ease; }
+  .card:hover .go i { transform: translateX(4px); }
+
+  footer { color: var(--muted); font-size: 13px; padding: 0 0 40px; }
+  kbd { font: 500 12px/1 ui-monospace, monospace; padding: 3px 6px; border-radius: 5px; border: 1px solid var(--line); background: var(--surface); }
+
+  @media (prefers-reduced-motion: reduce) { .card { animation: none; opacity: 1; transform: none; } }
+</style>
+</head>
+<body>
+  <header class="wrap">
+    <p class="eyebrow">Innovation · Value propositions</p>
+    <h1>Three ways to keep packaging out of the bin.</h1>
+    <p class="lede">Open a concept, then use the bar at the bottom of each page to glide to the next one or come back here.</p>
+    <nav class="flow" id="flow" aria-label="Page order"></nav>
+  </header>
+
+  <main class="wrap">
+    <div class="grid" id="grid"></div>
+  </main>
+
+  <footer class="wrap">On a concept page: <kbd>Alt</kbd> + <kbd>←</kbd> / <kbd>→</kbd> to switch, <kbd>Alt</kbd> + <kbd>H</kbd> for this hub.</footer>
+
+<script>
+  (function () {
+    var pages = window.HUB_PAGES, grid = document.getElementById("grid"), flow = document.getElementById("flow");
+    var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+
+    flow.innerHTML = pages.map(function (p) { return '<a href="' + esc(p.href) + '">' + esc(p.name) + '</a>'; })
+      .join('<span class="sep">→</span>') + '<span class="sep">↺</span>';
+
+    grid.innerHTML = pages.map(function (p, i) {
+      return '<a class="card" href="' + esc(p.href) + '" style="--i:' + i + ';--c-bg:' + p.bg + ';--c-ink:' + p.ink + ';--c-accent:' + p.accent + ';--c-font:' + esc(p.font) + '">' +
+        '<div class="preview"><iframe src="' + esc(p.href) + '" loading="lazy" tabindex="-1" aria-hidden="true" title=""></iframe></div>' +
+        '<div class="body">' +
+          '<div class="meta"><span>' + esc(p.no) + '</span><span class="tag">' + esc(p.tag) + '</span></div>' +
+          '<h2 class="name">' + esc(p.name) + '</h2>' +
+          '<p class="line">' + esc(p.line) + '</p>' +
+          '<span class="go">Open ' + esc(p.name) + ' <i>→</i></span>' +
+        '</div></a>';
+    }).join("");
+
+    // Scale each 1280px-wide preview to fit its card; drift it down a little on hover.
+    function fit() {
+      document.querySelectorAll(".preview").forEach(function (box) {
+        var f = box.querySelector("iframe"), s = box.clientWidth / 1280;
+        f.dataset.s = s; f.style.transform = "scale(" + s + ")";
+      });
+    }
+    fit(); addEventListener("resize", fit);
+    grid.addEventListener("mouseover", function (e) {
+      var c = e.target.closest(".card"); if (!c) return;
+      var f = c.querySelector("iframe"); f.style.transform = "scale(" + f.dataset.s + ") translateY(-180px)";
+    });
+    grid.addEventListener("mouseout", function (e) {
+      var c = e.target.closest(".card"); if (!c || c.contains(e.relatedTarget)) return;
+      var f = c.querySelector("iframe"); f.style.transform = "scale(" + f.dataset.s + ")";
+    });
+  })();
+</script>
+</body>
+</html>
