@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 35" preserveAspectRatio="none">
+<style>
+.s{transform-box:fill-box;transform-origin:left;animation:grow .9s cubic-bezier(.2,.7,.2,1) both}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){.s{animation:none}}
+</style>
+<rect class="s" style="animation-delay:0.00s" x="0" y="0" width="1000" height="3" fill="#171614"/>
+<rect class="s" style="animation-delay:0.07s" x="0" y="8" width="1000" height="10" fill="#171614"/>
+<rect class="s" style="animation-delay:0.14s" x="0" y="24" width="1000" height="4" fill="#2DB36A"/>
+<rect class="s" style="animation-delay:0.21s" x="0" y="33" width="1000" height="2" fill="#171614"/>
+</svg>
