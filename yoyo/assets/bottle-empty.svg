@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 220">
+<rect x="34" y="8" width="52" height="34" rx="10" fill="#D93A4A"/>
+<rect x="44" y="40" width="32" height="18" fill="#FFF6EC" stroke="#2747C4" stroke-width="4"/>
+<defs><clipPath id="body-clip"><rect x="12" y="58" width="96" height="152" rx="26"/></clipPath></defs>
+<g clip-path="url(#body-clip)"><rect x="12" y="58" width="96" height="152" fill="#FFF6EC"/><rect x="12" y="190" width="96" height="20" fill="#D93A4A" opacity=".28"/></g>
+<rect x="12" y="58" width="96" height="152" rx="26" fill="none" stroke="#2747C4" stroke-width="5"/>
+<rect x="26" y="112" width="68" height="46" rx="8" fill="#FFF6EC" stroke="#2747C4" stroke-width="3"/>
+<text x="60" y="141" text-anchor="middle" style="font-family:'Fraunces',serif;font-weight:800;font-size:17px" fill="#D93A4A">yoyo</text>
+</svg>

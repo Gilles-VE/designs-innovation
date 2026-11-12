@@ -12,20 +12,20 @@ window.HUB_PAGES = [
     font: "'Schibsted Grotesk', sans-serif"
   },
   {
-    id: "glug",
+    id: "yoyo",
     no: "02",
-    name: "Glug",
-    href: "Glug/VP2-Glug.html",
-    line: "One glass bottle, refilled whenever you run low.",
-    tag: "Refill shop",
-    bg: "#F4ECDB", ink: "#4E463A", accent: "#519432",
+    name: "Yoyo",
+    href: "yoyo/index.html",
+    line: "Your bottle goes away and comes back clean.",
+    tag: "Bottle swap",
+    bg: "#F7CFCB", ink: "#26305C", accent: "#D93A4A",
     font: "'Fraunces', serif"
   },
   {
-    id: "omniq",
+    id: "omnivore",
     no: "03",
     name: "Omnivore",
-    href: "omniq/index.html",
+    href: "omnivore/index.html",
     line: "Feed us your empties. Any brand, any bottle.",
     tag: "Collection machine",
     bg: "#FFF6E6", ink: "#18182A", accent: "#FF5A36",

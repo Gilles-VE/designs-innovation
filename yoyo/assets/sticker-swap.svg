@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+
+<defs><path id="ring" d="M100 100 m-72 0 a72 72 0 1 1 144 0 a72 72 0 1 1 -144 0"/></defs>
+<g class="rot"><circle cx="100" cy="100" r="96" fill="#D93A4A"/>
+<circle cx="100" cy="100" r="88" fill="none" stroke="#FFF6EC" stroke-width="2"/>
+<text style="font-family:'DM Sans',sans-serif;font-weight:700;font-size:16px" fill="#FFF6EC"><textPath href="#ring" textLength="448" lengthAdjust="spacing">REFILL BEAUTY • SWAP YOUR BOTTLE • </textPath></text>
+<image href="disc-cream.svg" x="47.98" y="47.98" width="104.04" height="104.04"/></g>
+
+</svg>
